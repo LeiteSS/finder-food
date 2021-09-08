@@ -5,20 +5,20 @@ import foto from '../../assets/chestnut-restaurant.jpg';
 
 import { Restaurant, RestaurantInfo, RestaurantPic,RestaurantName, Address } from './styles';
 
-const RestaurantCard = () => (
+const RestaurantCard = ({ restaurant }) => (
   <Restaurant>
     <RestaurantInfo>
-      <RestaurantName>Nome do Restaurante</RestaurantName>
+      <RestaurantName>{restaurant.name}</RestaurantName>
       <ReactStars
         count={5}
         isHalf
-        value={4}
+        value={restaurant.rating}
         edit={false}
         activeColor="#e7711c"
       />
-      <Address>Endereco</Address>
+      <Address>{restaurant.vicinity || restaurant.formatted_address}</Address>
     </RestaurantInfo>
-    <RestaurantPic src={foto} alt="Foto do Restaurante" />
+    <RestaurantPic src={restaurant.photos ? restaurant.photos[0].getUrl() : foto} alt="Foto do Restaurante" />
   </Restaurant>
 );
 
