@@ -6,7 +6,7 @@ import MaterialIcon from '@material/react-material-icon';
 
 import logo from '../../assets/logo.svg';
 import foto from '../../assets/chestnut-restaurant.jpg';
-import { Card, RestaurantCard, Modal, Map } from '../../components';
+import { Card, RestaurantCard, Modal, Map, Loader, Skeleton } from '../../components';
 import { Wrapper, Container, Search, Logo, Carousel, CarouselTitle } from './styles';
 
 const Home = () => {
@@ -18,6 +18,7 @@ const Home = () => {
   const settings = {
     dots: false,
     infinite: true,
+    autoplay: true,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -46,16 +47,22 @@ const Home = () => {
               onKeyPress={handleKeyPress}
               onChange={(e) => setInputValue(e.target.value) } />
           </TextField>
-          <CarouselTitle>Na sua Área</CarouselTitle>
-          <Carousel { ... settings}>
-            {restaurants.map((restaurant) => (
-              <Card
-                key={restaurant.place_id}
-                photo={restaurant.photos ? restaurant.photos[0].getUrl() : foto}
-                title={restaurant.name}
-              />
-            ))}
-          </Carousel>
+          {restaurants.length > 0 ? (
+            <>
+              <CarouselTitle>Na sua Área</CarouselTitle>
+                <Carousel { ... settings}>
+                  {restaurants.map((restaurant) => (
+                    <Card
+                      key={restaurant.place_id}
+                      photo={restaurant.photos ? restaurant.photos[0].getUrl() : foto}
+                      title={restaurant.name}
+                    />
+                  ))}
+                </Carousel>
+            </>
+          ) : (
+            <Loader />
+          )}
         </Search>
         {restaurants.map((restaurant) =>(
           <RestaurantCard restaurant={restaurant} />
