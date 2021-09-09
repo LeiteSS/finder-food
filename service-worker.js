@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/finder-food/precache-manifest.9bb047c120f80c235d4da35f3c5f2706.js"
+  "/finder-food/precache-manifest.5595e138ff6200a97c6e5a9065053ff6.js"
 );
 
 self.addEventListener('message', (event) => {

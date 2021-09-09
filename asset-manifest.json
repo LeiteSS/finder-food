@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/finder-food/static/js/main.725700ce.chunk.js",
-    "main.js.map": "/finder-food/static/js/main.725700ce.chunk.js.map",
+    "main.js": "/finder-food/static/js/main.1bd1eee5.chunk.js",
+    "main.js.map": "/finder-food/static/js/main.1bd1eee5.chunk.js.map",
     "runtime-main.js": "/finder-food/static/js/runtime-main.b6dbeae4.js",
     "runtime-main.js.map": "/finder-food/static/js/runtime-main.b6dbeae4.js.map",
     "static/css/2.77f23127.chunk.css": "/finder-food/static/css/2.77f23127.chunk.css",
-    "static/js/2.c6896bed.chunk.js": "/finder-food/static/js/2.c6896bed.chunk.js",
-    "static/js/2.c6896bed.chunk.js.map": "/finder-food/static/js/2.c6896bed.chunk.js.map",
+    "static/js/2.b198b2cf.chunk.js": "/finder-food/static/js/2.b198b2cf.chunk.js",
+    "static/js/2.b198b2cf.chunk.js.map": "/finder-food/static/js/2.b198b2cf.chunk.js.map",
     "index.html": "/finder-food/index.html",
-    "precache-manifest.9bb047c120f80c235d4da35f3c5f2706.js": "/finder-food/precache-manifest.9bb047c120f80c235d4da35f3c5f2706.js",
+    "precache-manifest.5595e138ff6200a97c6e5a9065053ff6.js": "/finder-food/precache-manifest.5595e138ff6200a97c6e5a9065053ff6.js",
     "service-worker.js": "/finder-food/service-worker.js",
     "static/css/2.77f23127.chunk.css.map": "/finder-food/static/css/2.77f23127.chunk.css.map",
-    "static/js/2.c6896bed.chunk.js.LICENSE.txt": "/finder-food/static/js/2.c6896bed.chunk.js.LICENSE.txt",
+    "static/js/2.b198b2cf.chunk.js.LICENSE.txt": "/finder-food/static/js/2.b198b2cf.chunk.js.LICENSE.txt",
     "static/media/chestnut-restaurant.jpg": "/finder-food/static/media/chestnut-restaurant.33890b80.jpg",
     "static/media/logo.svg": "/finder-food/static/media/logo.08f39897.svg",
     "static/media/slick-theme.css": "/finder-food/static/media/slick.f97e3bbf.svg"
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.b6dbeae4.js",
     "static/css/2.77f23127.chunk.css",
-    "static/js/2.c6896bed.chunk.js",
-    "static/js/main.725700ce.chunk.js"
+    "static/js/2.b198b2cf.chunk.js",
+    "static/js/main.1bd1eee5.chunk.js"
   ]
 }
