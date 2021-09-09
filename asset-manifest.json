@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/food-finder/static/js/main.725700ce.chunk.js",
+    "main.js.map": "/food-finder/static/js/main.725700ce.chunk.js.map",
+    "runtime-main.js": "/food-finder/static/js/runtime-main.00ee3c9d.js",
+    "runtime-main.js.map": "/food-finder/static/js/runtime-main.00ee3c9d.js.map",
+    "static/css/2.5c288e4a.chunk.css": "/food-finder/static/css/2.5c288e4a.chunk.css",
+    "static/js/2.c8c79957.chunk.js": "/food-finder/static/js/2.c8c79957.chunk.js",
+    "static/js/2.c8c79957.chunk.js.map": "/food-finder/static/js/2.c8c79957.chunk.js.map",
+    "index.html": "/food-finder/index.html",
+    "precache-manifest.ba490e40ab21bf629d4ed967f56a6d7b.js": "/food-finder/precache-manifest.ba490e40ab21bf629d4ed967f56a6d7b.js",
+    "service-worker.js": "/food-finder/service-worker.js",
+    "static/css/2.5c288e4a.chunk.css.map": "/food-finder/static/css/2.5c288e4a.chunk.css.map",
+    "static/js/2.c8c79957.chunk.js.LICENSE.txt": "/food-finder/static/js/2.c8c79957.chunk.js.LICENSE.txt",
+    "static/media/chestnut-restaurant.jpg": "/food-finder/static/media/chestnut-restaurant.33890b80.jpg",
+    "static/media/logo.svg": "/food-finder/static/media/logo.08f39897.svg",
+    "static/media/slick-theme.css": "/food-finder/static/media/slick.f97e3bbf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.00ee3c9d.js",
+    "static/css/2.5c288e4a.chunk.css",
+    "static/js/2.c8c79957.chunk.js",
+    "static/js/main.725700ce.chunk.js"
+  ]
+}
