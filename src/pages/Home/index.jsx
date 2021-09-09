@@ -7,13 +7,14 @@ import MaterialIcon from '@material/react-material-icon';
 import logo from '../../assets/logo.svg';
 import foto from '../../assets/chestnut-restaurant.jpg';
 import { Card, RestaurantCard, Modal, Map, Loader, Skeleton } from '../../components';
-import { Wrapper, Container, Search, Logo, Carousel, CarouselTitle } from './styles';
+import { Wrapper, Container, Search, Logo, Carousel, CarouselTitle, ModalTitle, ModalContent } from './styles';
 
 const Home = () => {
   const [inputValue, setInputValue] = useState('');
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState(null);
+  const [placeId, setPlaceId] = useState(null);
   const [modalOpened, setModalOpened] = useState(false);
-  const { restaurants } = useSelector((state) => state.restaurants);
+  const { restaurants, restaurantSelected } = useSelector((state) => state.restaurants);
 
   const settings = {
     dots: false,
@@ -29,6 +30,11 @@ const Home = () => {
     if (e.key === 'Enter') {
       setQuery(inputValue);
     }
+  }
+
+  function handleOpenModal(placeId){
+    setPlaceId(placeId);
+    setModalOpened(true);
   }
 
   return (
@@ -65,11 +71,18 @@ const Home = () => {
           )}
         </Search>
         {restaurants.map((restaurant) =>(
-          <RestaurantCard restaurant={restaurant} />
+          <RestaurantCard onClick={() => handleOpenModal(restaurant.place_id)} restaurant={restaurant} />
         ))}
       </Container>
-      <Map query={query}/>
-      <Modal open={modalOpened} onClose={() => setModalOpened(!modalOpened)} />
+      <Map query={query} placeId={placeId} />
+      <Modal open={modalOpened} onClose={() => setModalOpened(!modalOpened)}>
+        <ModalTitle>{restaurantSelected?.name}</ModalTitle>
+        <ModalContent>{restaurantSelected?.formatted_phone_number}</ModalContent>
+        <ModalContent>{restaurantSelected?.formatted_address}</ModalContent>
+        <ModalContent>
+          {restaurantSelected?.opening_hours?.open_now ? 'Aberto' : 'Fechado'}
+        </ModalContent>
+      </Modal>
     </Wrapper>
   );
 };

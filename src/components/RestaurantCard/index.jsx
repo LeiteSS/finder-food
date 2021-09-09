@@ -5,8 +5,8 @@ import foto from '../../assets/chestnut-restaurant.jpg';
 
 import { Restaurant, RestaurantInfo, RestaurantPic,RestaurantName, Address } from './styles';
 
-const RestaurantCard = ({ restaurant }) => (
-  <Restaurant>
+const RestaurantCard = ({ restaurant, onClick }) => (
+  <Restaurant onClick={onClick}>
     <RestaurantInfo>
       <RestaurantName>{restaurant.name}</RestaurantName>
       <ReactStars
